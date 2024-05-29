@@ -1,0 +1,103 @@
+/* Shared styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+h2 {
+  padding: 10px;
+  color: #fff;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+.resource-group {
+  margin-bottom: 30px;
+}
+.resource {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+}
+.resource:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.resource img {
+  width: 500px;
+  height: 100px;
+  margin-right: 20px;
+}
+a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+a:hover {
+  color: #009688;
+}
+p,
+ol {
+  margin: 0;
+}
+ol {
+  padding-left: 20px;
+}
+@media (max-width: 768px) {
+  .resource {
+    flex-direction: column;
+    align-items: center;
+  }
+  .resource img {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .resource div {
+    text-align: center;
+  }
+}
+
+/* Specific styles for each user type */
+.body-students {
+  background-color: #49bdb5;
+}
+.body-staff {
+  background-color: #342222;
+}
+.body-parents {
+  background-color: #f4f4f4;
+}
+
+.h2-students {
+  background-color: #006975;
+}
+.h2-staff {
+  background-color: #d40000;
+}
+.h2-parents {
+  background-color: #666;
+}
+
+.resource-staff {
+  border: 1.5px solid #ff0000;
+  border-radius: 10px;
+}
